@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<link rel="shortcut icon" href=""/>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>DEPORTES ON + LIVE STREAM</title>
+
+<style>
+    :root {
+                --color-green: rgb(7, 235, 7);
+                --color-gray: rgb(128, 128, 128);
+                --color-red: #f91e4e;
+                --color-gray-black: #1e293b;
+                --color-gray-title: #334155;
+                --color-back: #293445;
+}
+
+body
+{
+                background-color: #1b0202;
+}
+
+.main {
+                margin: 40px 0px 40px 0px;
+}
+
+.inlive {
+                width: 10px;
+                height: 10px;
+                background-color: var(--color-green);
+                border-radius: 50%;
+                display: inline-block;
+                animation: blinker 1s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+                animation-duration: 0.s;
+                animation-timing-function: ease;
+                animation-delay: 0s;
+  
+                animation-play-state: running;
+
+}
+
+
+
+.noinlive {
+             --color-green: rgb(235, 7, 7);
+                width: 10px;
+                height: 10px;
+                background-color: var(--color-green);
+                border-radius: 50%;
+                display: inline-block;
+                animation: blinker 1s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+                animation-duration: 0.s;
+                animation-timing-function: ease;
+                animation-delay: 0s;
+  
+                animation-play-state: running;
+
+}
+
+.activo {
+    
+    color: rgb(15, 235, 7);
+
+}
+.inactivo {
+    
+    color: rgb(235, 7, 7);
+
+}
+
+.recargar {
+    display: inline-block;
+    background-color: #eef7f8;
+    padding: 3px 15px;
+    border-radius: 7px;
+    color: #020101;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.recargar:hover {
+    background-color: #ac0a0a;
+    color: #fcf5f5;
+}
+
+.fondo {
+    background-color: #1b0202;
+    color: #f8cc09;
+}
+
+
+.link {
+    display: flex;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f30e0e;
+    padding: 1px 10px;
+    color: #fff9f9;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 3px 3px;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+.btn:hover {
+    background-color: #a1a3a0;
+    color: #0a0808;
+}
+
+
+.fecha {
+    display: inline-block;
+    background-color: #e9ac03;
+    border-radius: 5px;
+    color: #130d0d;
+    padding: 1px 4px;
+    text-decoration: none;
+    margin: 10px;
+    
+}
+
+
+.btn1 {
+    display: inline-block;
+    background-color: #e9ac03;
+    padding: 1px 4px;
+    color: #070000;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
+
+
+@keyframes blinker {
+    from { opacity: 2; }
+    to { opacity: 0; }
+  }
+
+
+
+
+
+@keyframes changeColorOffline {
+                                10% { background-color: var(--color-red); }
+                                0% { background-color: var(--color-gray); }
+}
+
+
+.btn-red {
+                background-color: var(--color-red);
+}
+
+@media (max-width: 768px) {
+                .line {
+                                display: none;
+                }
+}
+
+
+
+
+</style>
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="fcdeafb30af78449da39f3c1-text/javascript"></script>
+<script src="https://embed.sdfgnksbounce.com/assets/js/main.js?=v1.03" type="fcdeafb30af78449da39f3c1-text/javascript"></script>
+
+</head>
+<body>
+
+<center><div class="text-logo">
+<a href=""><img src="https://i.ibb.co/XCphYBP/deppng.png" width="250px" height="100px" class="logo"></a>
+</div>
+
+</center>
+    <center>
+        <a class="recargar" href="go:FUT">🔃RECARGAR</a>
+    </center> 
+     
+    
+<center>
+<a class="btn1" href="go:TELEGRAM">🗨️ TELEGRAM</a>
+<a class="btn1" href="go:APP">APP</a>
+<a class="btn1" href="go:REPORTE">REPORTE ⚠️</a>
+</center>
+
+
+
+
+
+    <center>
+<a class="fecha" >📅 13 DE MAYO 2025</a>
+
+    </center>
+
+
+ <hr>   
+<div class="max-w-sm rounded overflow-hidden">
+<div class="px-2 sm:px-4">
+<span class="indicator inlive"></span>
+<span class="activo">activo</span><a style="color: #f8cc09;"> 13:00</a>
+<div style="color: #fff; font-size: 15px;">La Liga EA Sports : Real Valladolid - Girona</div>
+<li class="btn"><a href="https://deportesonplus.github.io/disney1/" target="_blank">Disney+</a></li>
+<li class="btn"><a href="https://deportesonplus.github.io/espn2/" target="_blank">ESPN 2</a></li>
+<li class="btn"><a href="https://deportesonplus.github.io/eleven1_pt/" target="_blank">Eleven 1 PT</a></li>
+<li class="btn"><a href="https://deportesonplus.github.io/espndeportes/" target="_blank">ESPN Deportes</a></li>
+
+ </div>
+</div>   </div> 
+<hr width="100%">
+
+
+
+<div class="max-w-sm rounded overflow-hidden">
+<div class="px-2 sm:px-4">
+<span class="indicator noinlive"></span>
+<span class="inactivo">inactivo</span><a style="color: #f8cc09;"> 14:00</a>
+<div style="color: #fff; font-size: 15px;">La Liga EA Sports : Real Sociedad vs Celta</div>
+
+ </div>
+</div>   </div> 
+<hr width="100%">
+
+
+
+
+<div class="max-w-sm rounded overflow-hidden">
+<div class="px-2 sm:px-4">
+<span class="indicator noinlive"></span>
+<span class="inactivo">inactivo</span><a style="color: #f8cc09;"> 15:00</a>
+<div style="color: #fff; font-size: 15px;">Championship : Sunderland - Coventry City</div>
+
+ </div>
+</div>   </div> 
+<hr width="100%">
+
+
+
+<div class="max-w-sm rounded overflow-hidden">
+<div class="px-2 sm:px-4">
+<span class="indicator noinlive"></span>
+<span class="inactivo">inactivo</span><a style="color: #f8cc09;"> 15:30</a>
+<div style="color: #fff; font-size: 15px;">La Liga EA Sports : Sevilla FC - UD Las Palmas</div>
+
+ </div>
+</div>   </div> 
+<hr width="100%">
+
+
+
+<div class="max-w-sm rounded overflow-hidden">
+<div class="px-2 sm:px-4">
+<span class="indicator noinlive"></span>
+<span class="inactivo">inactivo</span><a style="color: #f8cc09;"> 18:00</a>
+<div style="color: #fff; font-size: 15px;">Copa Sudamericana : Gremio - Godoy Cruz</div>
+
+ </div>
+</div>   </div> 
+<hr width="100%">
+
+
+<div class="max-w-sm rounded overflow-hidden">
+<div class="px-2 sm:px-4">
+<span class="indicator noinlive"></span>
+<span class="inactivo">inactivo</span><a style="color: #f8cc09;"> 18:00</a>
+<div style="color: #fff; font-size: 15px;">Copa Sudamericana : Nacional Potosí - Boston River</div>
+
+ </div>
+</div>   </div> 
+<hr width="100%">
+
+
+<div class="max-w-sm rounded overflow-hidden">
+<div class="px-2 sm:px-4">
+<span class="indicator noinlive"></span>
+<span class="inactivo">inactivo</span><a style="color: #f8cc09;"> 18:00</a>
+<div style="color: #fff; font-size: 15px;">Copa Libertadores : Deportivo Táchira - Central Córdoba</div>
+
+ </div>
+</div>   </div> 
+<hr width="100%">
+
+
+<div class="max-w-sm rounded overflow-hidden">
+<div class="px-2 sm:px-4">
+<span class="indicator noinlive"></span>
+<span class="inactivo">inactivo</span><a style="color: #f8cc09;"> 20:30</a>
+<div style="color: #fff; font-size: 15px;">Copa Libertadores : U de Chile - Carabobo</div>
+
+ </div>
+</div>   </div> 
+<hr width="100%">
+
+
+<div class="max-w-sm rounded overflow-hidden">
+<div class="px-2 sm:px-4">
+<span class="indicator noinlive"></span>
+<span class="inactivo">inactivo</span><a style="color: #f8cc09;"> 20:30</a>
+<div style="color: #fff; font-size: 15px;">Copa Sudamericana : Unión Santa Fe - Mushuc Runa</div>
+
+ </div>
+</div>   </div> 
+<hr width="100%">
+
+
+
+<div class="max-w-sm rounded overflow-hidden">
+<div class="px-2 sm:px-4">
+<span class="indicator noinlive"></span>
+<span class="inactivo">inactivo</span><a style="color: #f8cc09;"> 20:30</a>
+<div style="color: #fff; font-size: 15px;">Copa Libertadores : Fortaleza SC - Bucaramanga</div>
+
+ </div>
+</div>   </div> 
+<hr width="100%">
+
+
+
+<div class="max-w-sm rounded overflow-hidden">
+<div class="px-2 sm:px-4">
+<span class="indicator noinlive"></span>
+<span class="inactivo">inactivo</span><a style="color: #f8cc09;"> 20:30</a>
+<div style="color: #fff; font-size: 15px;">Copa Libertadores : Sporting Cristal - Cerro Porteño</div>
+
+ </div>
+</div>   </div> 
+<hr width="100%">
+
+
+<div class="max-w-sm rounded overflow-hidden">
+<div class="px-2 sm:px-4">
+<span class="indicator noinlive"></span>
+<span class="inactivo">inactivo</span><a style="color: #f8cc09;"> 20:30</a>
+<div style="color: #fff; font-size: 15px;">Copa Sudamericana : Puerto Cabello - Melgar</div>
+
+ </div>
+</div>   </div> 
+<hr width="100%">
+
+
+
+
+<div class="max-w-sm rounded overflow-hidden">
+<div class="px-2 sm:px-4">
+<span class="indicator noinlive"></span>
+<span class="inactivo">inactivo</span><a style="color: #f8cc09;"> 20:30</a>
+<div style="color: #fff; font-size: 15px;">Copa Sudamericana : Lanús - Vasco da Gama</div>
+
+ </div>
+</div>   </div> 
+<hr width="100%">
+
+<br><br><br><br>
+
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="fcdeafb30af78449da39f3c1-|49" defer></script></body>
+
+
+</html>
