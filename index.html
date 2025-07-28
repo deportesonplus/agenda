@@ -196,10 +196,11 @@
 
         div.sombreada_css3 {
             font-size: 15px;
+            font-weight: 600;
             background-color: #ffae00;
             width: 100%px;
             padding: 12px;
-            color: #002399;
+            color: #f7f7f8;
             box-shadow: 0px 1px 1px #333;
             -webkit-box-shadow: 0px 1px 1px #333;
             -moz-box-shadow: 0px 1px 1px #333;
@@ -1353,13 +1354,12 @@
 
 
 
-            <center>
-                <div class="sombreada_css3">
-                    <font size=2 face="Helvetica Neue,Helvetica,Arial,sans-serif" color="#1c2833">
-                       <div id='fechayhora'/>
-                    </font>
-                </div>
-            </center>
+<center>
+<div class="sombreada_css3">
+
+<div id='fechayhora'/>
+ </div>
+</center>
 
 
 
@@ -1466,7 +1466,7 @@ Liga BetPlay: Fortaleza CEIF vs. Alianza Petrolera
 
 
 
-
+               
 
 
 
@@ -1483,6 +1483,7 @@ let timeBtn = document.querySelector("#fechayhora");
 let options = {
   timeZone: 'America/Santiago',
   timeZoneName: 'short',
+  day: 'numeric',
   year: 'numeric',
   month: 'numeric',
   day: 'numeric',
@@ -1490,6 +1491,7 @@ let options = {
   minute: 'numeric',
   second: 'numeric',
   hour12: false,
+
   
 };
 
@@ -1572,80 +1574,8 @@ setInterval(updateTime, 1000);
             });
         });
 
-
-
-
-
-
-
-        /*const partidosApi1 = [
-        
-        ];
-        
-        const partidosApi2 = [
-        ];
-        
-        function updateScores(url, partidos) {
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    partidos.forEach(partido => {
-                        const homeElem = document.querySelector(`${partido.elem} .local`);
-                        const awayElem = document.querySelector(`${partido.elem} .visitante`);
-                        const partidoElem = document.querySelector(partido.elem);
-                        
-                        homeElem.textContent = "-";
-                        awayElem.textContent = "-";
-                        homeElem.classList.remove('blink', 'red');
-                        awayElem.classList.remove('blink', 'red');
-                    });
-                    
-                    data.response.forEach(match => {
-                        partidos.forEach(partido => {
-                            if (match.teams.home.id === partido.homeId || match.teams.away.id === partido.homeId) {
-                                const homeElem = document.querySelector(`${partido.elem} .local`);
-                                const awayElem = document.querySelector(`${partido.elem} .visitante`);
-                                const partidoElem = document.querySelector(partido.elem);
-        
-                                homeElem.textContent = match.goals?.home ?? "-";
-                                awayElem.textContent = match.goals?.away ?? "-";
-        
-                                const statusShort = match.fixture.status.short;
-                                if (statusShort === "1H" || statusShort === "2H") {
-                                    homeElem.classList.add('blink', 'red');
-                                    awayElem.classList.add('blink', 'red');
-                                } else if (statusShort === "HT") {
-                                    homeElem.classList.remove('blink');
-                                    awayElem.classList.remove('blink');
-                                    homeElem.classList.add('yellow');
-                                    awayElem.classList.add('yellow');
-                                } else if (statusShort === "FT") {
-                                    partidoElem.remove();
-                                } else if (statusShort === "NS") {
-                                    homeElem.classList.remove('blink');
-                                    awayElem.classList.remove('blink');
-                                    homeElem.classList.add('black');
-                                    awayElem.classList.add('black');
-                                }
-                            }
-                        });
-                    });
-                })
-                .catch(error => console.error('Error al obtener los datos:', error));
-        }
-        
-        
-        
-        function updateAllScores() {
-            updateScores('https://bestleague.one/api.json', partidosApi1);
-            updateScores('https://bestleague.one/api2.json', partidosApi2);
-        }
-        
-        setInterval(updateAllScores, 120000);
-        updateAllScores(); */
-
-
     </script>
+
     <script>
         function popUp(URL, ancho, alto) {
             window.open(URL, '_blank', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=' + ancho + ',height=' + alto);
