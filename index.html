@@ -195,6 +195,7 @@
         }
 
         div.sombreada_css3 {
+            font-size: 15px;
             background-color: #ffae00;
             width: 100%px;
             padding: 12px;
@@ -1322,7 +1323,19 @@
         .display-none {
             display: none;
         }
+
+
+.fechayhora {
+  text-transform: capitalize;
+  
+}
+
+
+
+
+
     </style>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -1343,7 +1356,7 @@
             <center>
                 <div class="sombreada_css3">
                     <font size=2 face="Helvetica Neue,Helvetica,Arial,sans-serif" color="#1c2833">
-                        <b>Agenda - 27 de Julio 2025</b>
+                       <div id='fechayhora'/>
                     </font>
                 </div>
             </center>
@@ -1525,6 +1538,56 @@ Liga BetPlay: Fortaleza CEIF vs. Alianza Petrolera
 
         </ul>
     </div>
+
+
+<script>
+    let format = new Date();
+let time;
+let timeBtn = document.querySelector("#fechayhora");
+
+let options = {
+  timeZone: 'America/Santiago',
+  timeZoneName: 'short',
+  year: 'numeric',
+  month: 'numeric',
+  day: 'numeric',
+  hour: 'numeric',
+  minute: 'numeric',
+  second: 'numeric',
+  hour12: false,
+  
+};
+
+//formmatter
+let dtFormatter = new Intl.DateTimeFormat('es-ES', options)
+
+//Set initial
+time = dtFormatter.format(format);
+timeBtn.innerHTML = time;
+
+//format
+function dateFormat() {
+  let currDate = new Date();
+  let date = dtFormatter.format(currDate);
+  return date //callback
+}
+
+function updateTime() {
+  time = dateFormat()
+  timeBtn.innerHTML = time;
+}
+
+//setInterval
+setInterval(updateTime, 1000);
+</script>
+
+
+
+
+
+
+
+
 
     <script type="text/javascript">
         $(function () {
