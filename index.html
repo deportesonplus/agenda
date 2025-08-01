@@ -195,14 +195,15 @@
         }
 
         div.sombreada_css3 {
-            background: linear-gradient(
-		to top,
+        background: linear-gradient(
+		to right,
 		#ffae00 33.33%,
 		#ffae00 30033.33%,
 		#ffae00 366.66%,
 		#ffae00 366.66%
 	);
-	margin-right: 0.rem;
+	margin-right: 0.0rem;
+
 
     
             font-size: 15px;
@@ -1357,7 +1358,7 @@
 <center>
 <div class="sombreada_css3">
 
-<div id='fechayhora'/>
+<div id='getfecha'/>
  </div>
 </center>
 
@@ -1390,7 +1391,7 @@ Amistosos: Fortuna Sittard vs. Bayer Leverkusen
 Liga 1: Los Chankas vs. Comerciantes Unidos
 <span class="t">19:00</span></a>
 <ul>
-<li class="subitem1"><a href="" target="_blank">Deportes On +<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="https://voodc.com/embed/1/85818b959c8e9a86847a85979f8c988989.html" target="_blank">Deportes On +<span>Calidad 720p</span></a></li>
 </ul>
 </li>
 
@@ -1398,7 +1399,7 @@ Liga 1: Los Chankas vs. Comerciantes Unidos
 Bundesliga 2: Schalke 04 vs. Hertha BSC
 <span class="t">19:30</span></a>
 <ul>
-<li class="subitem1"><a href="" target="_blank">Deportes On +<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="https://la14hd.com/vivo/canal.php?stream=disney15" target="_blank">Deportes On +<span>Calidad 720p</span></a></li>
 </ul>
 </li>
 
@@ -1406,7 +1407,7 @@ Bundesliga 2: Schalke 04 vs. Hertha BSC
 League One: Luton Town vs. AFC Wimbledon
 <span class="t">20:00</span></a>
 <ul>
-<li class="subitem1"><a href="" target="_blank">Deportes On +<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="https://la14hd.com/vivo/canal.php?stream=disney16" target="_blank">Deportes On +<span>Calidad 720p</span></a></li>
 
 </ul>
 </li>
@@ -1552,54 +1553,12 @@ Leagues Cup: Tigres vs. San Diego FC
 
 
 
-
-
-</ul>
-</div>
 <script>
-    let format = new Date();
-let time;
-let timeBtn = document.querySelector("#fechayhora");
-
-let options = {
-  timeZone: 'America/Santiago',
-  timeZoneName: 'short',
-  day: 'numeric',
-  year: 'numeric',
-  month: 'numeric',
-  day: 'numeric',
-  hour: 'numeric',
-  minute: 'numeric',
-  second: 'numeric',
-  hour12: false,
-
-  
-};
-
-//formmatter
-let dtFormatter = new Intl.DateTimeFormat('es-ES', options)
-
-//Set initial
-time = dtFormatter.format(format);
-timeBtn.innerHTML = time;
-
-//format
-function dateFormat() {
-  let currDate = new Date();
-  let date = dtFormatter.format(currDate);
-  return date //callback
-}
-
-function updateTime() {
-  time = dateFormat()
-  timeBtn.innerHTML = time;
-}
-
-//setInterval
-setInterval(updateTime, 1000);
+  var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+  var diasSemana = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
+  var f = new Date();
+  document.getElementById("getfecha").innerHTML = diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear();
 </script>
-
-
 
 
 
